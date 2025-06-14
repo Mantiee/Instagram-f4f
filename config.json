@@ -1,0 +1,60 @@
+{
+    "EMULATOR_NAME": {
+        "value": "Pixel_1",
+        "comment":"Nazwa AVD/emulatora"
+    },
+    "EMULATOR_UDID": {
+      "value": "emulator-5554",
+      "comment":"UDID emulatora"
+    },
+    "DNS": {
+      "value": "8.8.8.8,4.4.4.4",
+      "comment":"Lista DNS dla emulatora"
+    },
+    "STAY_LOGGED_IN": {
+        "value": true,
+        "comment": "Czy pozostac zalogowanym (Jesli pierwszy raz sie logujesz to musi byc false!)"
+    },
+    "USERNAME": {
+        "value": "",
+        "comment": "Nazwa uzytkownika na Instagram, lub mail"
+    },
+    "PASSWORD": {
+        "value": "",
+        "comment": "Haslo do konta"
+    },
+    "MAX_TO_FOLLOW": {
+        "value": 1000,
+        "comment": "Maksymalna liczba kont do followowania"
+    },
+    "BATCH_SIZE_MIN": {
+        "value": 1,
+        "comment": "Minimalny rozmiar partii"
+    },
+    "BATCH_SIZE_MAX": {
+        "value": 3,
+        "comment": "Maksymalny rozmiar partii"
+    },
+    "HOURLY_TARGET_RANGE": {
+        "value": [
+            8,
+            16
+        ],
+        "comment": "Docelowa liczba follow na godzine"
+    },
+    "BOT_START_TIME": {
+        "value": 13,
+        "comment": "Godzina rozpoczecia pracy bota"
+    },
+    "BOT_END_TIME": {
+        "value": 20,
+        "comment": "Godzina zakonczenia pracy bota"
+    },
+    "BOT_ACTIVE_TIME_OFFSET_RANGE": {
+        "value": [
+            -7,
+            7
+        ],
+        "comment": "Offset w minutach (dolna granica, gorna granica)"
+    }
+}
