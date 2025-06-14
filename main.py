@@ -374,18 +374,6 @@ def get_username_from_profile():
         print(f"{RED}[ERROR] Nie udało się pobrać username z profilu: {e}{RESET}")
         return None
 
-def initialize_username():
-    username_text = get_username_from_profile()
-    if username_text:
-        global USERNAME, TARGET_USERS_FILE
-        USERNAME = username_text
-        init_account_directories(USERNAME)
-        TARGET_USERS_FILE = os.path.join(BASE_DIR, USERNAME, "target_accounts_for_followers.txt")
-        if not os.path.exists(TARGET_USERS_FILE):
-            open(TARGET_USERS_FILE, "w", encoding="utf-8").close()
-        return USERNAME
-    return None
-
 def open_profile(username):
     try:
         search_tab = WebDriverWait(driver, 10).until(
